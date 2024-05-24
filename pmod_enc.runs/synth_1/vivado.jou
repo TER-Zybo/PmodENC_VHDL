@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu May 23 16:09:10 2024
+# Process ID: 198153
+# Current directory: /nfs/home/m1info3/Documents/TER_FPGA/pmod_enc/pmod_enc.runs/synth_1
+# Command line: vivado -log PmodENC.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PmodENC.tcl
+# Log file: /nfs/home/m1info3/Documents/TER_FPGA/pmod_enc/pmod_enc.runs/synth_1/PmodENC.vds
+# Journal file: /nfs/home/m1info3/Documents/TER_FPGA/pmod_enc/pmod_enc.runs/synth_1/vivado.jou
+# Running On: secil7.siame.univ-tlse3.fr, OS: Linux, CPU Frequency: 3850.071 MHz, CPU Physical cores: 8, Host memory: 16464 MB
+#-----------------------------------------------------------
+source PmodENC.tcl -notrace

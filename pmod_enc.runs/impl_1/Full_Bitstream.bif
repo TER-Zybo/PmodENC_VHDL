@@ -1,0 +1,4 @@
+all:
+{
+        /nfs/home/m1info3/Documents/TER_FPGA/pmod_enc/pmod_enc.runs/impl_1/PmodENC.bit /* Bitstream file name */
+}

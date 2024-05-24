@@ -1,0 +1,262 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu May 23 16:09:10 2024
+# Process ID: 198153
+# Current directory: /nfs/home/m1info3/Documents/TER_FPGA/pmod_enc/pmod_enc.runs/synth_1
+# Command line: vivado -log PmodENC.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PmodENC.tcl
+# Log file: /nfs/home/m1info3/Documents/TER_FPGA/pmod_enc/pmod_enc.runs/synth_1/PmodENC.vds
+# Journal file: /nfs/home/m1info3/Documents/TER_FPGA/pmod_enc/pmod_enc.runs/synth_1/vivado.jou
+# Running On: secil7.siame.univ-tlse3.fr, OS: Linux, CPU Frequency: 3850.071 MHz, CPU Physical cores: 8, Host memory: 16464 MB
+#-----------------------------------------------------------
+Sourcing tcl script '/nfs/xilinx/Vivado/2023.1/scripts/Vivado_init.tcl'
+source PmodENC.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 1536.629 ; gain = 47.023 ; free physical = 2675 ; free virtual = 19914
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/nfs/xilinx/vivado-library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/nfs/xilinx/Vivado/2023.1/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:00.47 ; elapsed = 00:00:05 . Memory (MB): peak = 1560.441 ; gain = 23.812 ; free physical = 3274 ; free virtual = 20369
+Command: read_checkpoint -auto_incremental -incremental /nfs/home/m1info3/Documents/TER_FPGA/pmod_enc/pmod_enc.srcs/utils_1/imports/synth_1/PmodENC.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /nfs/home/m1info3/Documents/TER_FPGA/pmod_enc/pmod_enc.srcs/utils_1/imports/synth_1/PmodENC.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top PmodENC -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 198458
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2303.879 ; gain = 379.645 ; free physical = 2317 ; free virtual = 19404
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-10729] formal port 'led' of mode 'buffer' cannot be associated with actual port 'led' of mode 'out' [/nfs/home/m1info3/Documents/TER_FPGA/pmod_enc/pmod_enc.srcs/sources_1/imports/Downloads/PmodENC.vhd:37]
+INFO: [Synth 8-638] synthesizing module 'PmodENC' [/nfs/home/m1info3/Documents/TER_FPGA/pmod_enc/pmod_enc.srcs/sources_1/imports/Downloads/PmodENC.vhd:18]
+INFO: [Synth 8-638] synthesizing module 'Debouncer' [/nfs/home/m1info3/Documents/TER_FPGA/pmod_enc/pmod_enc.srcs/sources_1/imports/Downloads/Debouncer.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'Debouncer' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/pmod_enc/pmod_enc.srcs/sources_1/imports/Downloads/Debouncer.vhd:19]
+INFO: [Synth 8-638] synthesizing module 'Encoder' [/nfs/home/m1info3/Documents/TER_FPGA/pmod_enc/pmod_enc.srcs/sources_1/imports/Downloads/Encoder.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'Encoder' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/pmod_enc/pmod_enc.srcs/sources_1/imports/Downloads/Encoder.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'PmodENC' (0#1) [/nfs/home/m1info3/Documents/TER_FPGA/pmod_enc/pmod_enc.srcs/sources_1/imports/Downloads/PmodENC.vhd:18]
+WARNING: [Synth 8-7129] Port JE[3] in module PmodENC is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2369.848 ; gain = 445.613 ; free physical = 2258 ; free virtual = 19344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2384.691 ; gain = 460.457 ; free physical = 2255 ; free virtual = 19341
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2384.691 ; gain = 460.457 ; free physical = 2255 ; free virtual = 19341
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2384.691 ; gain = 0.000 ; free physical = 2254 ; free virtual = 19341
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/nfs/home/m1info3/Documents/TER_FPGA/pmod_enc/pmod_enc.srcs/constrs_1/imports/Downloads/Zybo-Z7-Master.xdc]
+Finished Parsing XDC File [/nfs/home/m1info3/Documents/TER_FPGA/pmod_enc/pmod_enc.srcs/constrs_1/imports/Downloads/Zybo-Z7-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/nfs/home/m1info3/Documents/TER_FPGA/pmod_enc/pmod_enc.srcs/constrs_1/imports/Downloads/Zybo-Z7-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/PmodENC_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/PmodENC_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2517.473 ; gain = 0.000 ; free physical = 2234 ; free virtual = 19320
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2517.473 ; gain = 0.000 ; free physical = 2234 ; free virtual = 19320
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2517.473 ; gain = 593.238 ; free physical = 2228 ; free virtual = 19322
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2517.473 ; gain = 593.238 ; free physical = 2228 ; free virtual = 19323
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2517.473 ; gain = 593.238 ; free physical = 2229 ; free virtual = 19323
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'curState_reg' in module 'Encoder'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0000 |                             0000
+                      r1 |                             0001 |                             0001
+                      r2 |                             0010 |                             0010
+                      r3 |                             0011 |                             0011
+                     add |                             0100 |                             0111
+                      l1 |                             0101 |                             0100
+                      l2 |                             0110 |                             0101
+                      l3 |                             0111 |                             0110
+                     sub |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'curState_reg' using encoding 'sequential' in module 'Encoder'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 2517.473 ; gain = 593.238 ; free physical = 2229 ; free virtual = 19323
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 2     
++---Registers : 
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   3 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 17    
+	   9 Input    4 Bit        Muxes := 3     
+	   3 Input    3 Bit        Muxes := 4     
+	   3 Input    2 Bit        Muxes := 2     
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port JE[3] in module PmodENC is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2517.473 ; gain = 593.238 ; free physical = 2222 ; free virtual = 19319
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 2517.473 ; gain = 593.238 ; free physical = 2195 ; free virtual = 19296
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 2517.473 ; gain = 593.238 ; free physical = 2195 ; free virtual = 19296
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 2517.473 ; gain = 593.238 ; free physical = 2198 ; free virtual = 19299
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 2517.473 ; gain = 593.238 ; free physical = 2247 ; free virtual = 19348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 2517.473 ; gain = 593.238 ; free physical = 2247 ; free virtual = 19347
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 2517.473 ; gain = 593.238 ; free physical = 2247 ; free virtual = 19347
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 2517.473 ; gain = 593.238 ; free physical = 2247 ; free virtual = 19347
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 2517.473 ; gain = 593.238 ; free physical = 2247 ; free virtual = 19347
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 2517.473 ; gain = 593.238 ; free physical = 2247 ; free virtual = 19348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     2|
+|3     |LUT2 |     1|
+|4     |LUT3 |     3|
+|5     |LUT4 |     6|
+|6     |LUT5 |     3|
+|7     |LUT6 |     7|
+|8     |FDCE |     8|
+|9     |FDRE |    11|
+|10    |IBUF |     4|
+|11    |OBUF |     4|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 2517.473 ; gain = 593.238 ; free physical = 2247 ; free virtual = 19348
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 2517.473 ; gain = 460.457 ; free physical = 2247 ; free virtual = 19348
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 2517.473 ; gain = 593.238 ; free physical = 2247 ; free virtual = 19348
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2517.473 ; gain = 0.000 ; free physical = 2524 ; free virtual = 19625
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2517.473 ; gain = 0.000 ; free physical = 2537 ; free virtual = 19635
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 7752e8fe
+INFO: [Common 17-83] Releasing license: Synthesis
+30 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:34 . Memory (MB): peak = 2517.473 ; gain = 941.188 ; free physical = 2537 ; free virtual = 19635
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1830.996; main = 1497.886; forked = 375.089
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4088.273; main = 2517.477; forked = 1602.812
+INFO: [Common 17-1381] The checkpoint '/nfs/home/m1info3/Documents/TER_FPGA/pmod_enc/pmod_enc.runs/synth_1/PmodENC.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file PmodENC_utilization_synth.rpt -pb PmodENC_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May 23 16:10:12 2024...

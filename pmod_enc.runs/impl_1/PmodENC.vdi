@@ -1,0 +1,67 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu May 23 18:31:33 2024
+# Process ID: 228622
+# Current directory: /nfs/home/m1info3/Documents/TER_FPGA/pmod_enc/pmod_enc.runs/impl_1
+# Command line: vivado -log PmodENC.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source PmodENC.tcl -notrace
+# Log file: /nfs/home/m1info3/Documents/TER_FPGA/pmod_enc/pmod_enc.runs/impl_1/PmodENC.vdi
+# Journal file: /nfs/home/m1info3/Documents/TER_FPGA/pmod_enc/pmod_enc.runs/impl_1/vivado.jou
+# Running On: secil7.siame.univ-tlse3.fr, OS: Linux, CPU Frequency: 3722.241 MHz, CPU Physical cores: 8, Host memory: 16464 MB
+#-----------------------------------------------------------
+Sourcing tcl script '/nfs/xilinx/Vivado/2023.1/scripts/Vivado_init.tcl'
+source PmodENC.tcl -notrace
+Command: open_checkpoint PmodENC_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1489.602 ; gain = 0.000 ; free physical = 3079 ; free virtual = 21814
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1910.480 ; gain = 0.000 ; free physical = 2762 ; free virtual = 21487
+INFO: [Project 1-479] Netlist was created with Vivado 2023.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF Files: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2591.707 ; gain = 5.938 ; free physical = 2153 ; free virtual = 20878
+Restored from archive | CPU: 0.050000 secs | Memory: 1.097145 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2591.707 ; gain = 5.938 ; free physical = 2153 ; free virtual = 20878
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2591.707 ; gain = 0.000 ; free physical = 2153 ; free virtual = 20878
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2023.1 (64-bit) build 3865809
+open_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 2591.707 ; gain = 1102.105 ; free physical = 2153 ; free virtual = 20878
+Command: write_bitstream -force PmodENC.bit -bin_file
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/nfs/xilinx/Vivado/2023.1/data/ip'.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC ZPS7-1] PS7 block required: The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./PmodENC.bit...
+Writing bitstream ./PmodENC.bin...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-1876] WebTalk data collection is mandatory when using a ULT device. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+20 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 3153.234 ; gain = 561.527 ; free physical = 1608 ; free virtual = 20345
+INFO: [Common 17-206] Exiting Vivado at Thu May 23 18:32:15 2024...
